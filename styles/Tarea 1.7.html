@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsivo -->
+    <title>Formulario Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+<!-- DATOS PERSONALES -->
+<fieldset class="gris"> <!-- clase añadida -->
+<legend>Datos Personales</legend> <!-- Título del fieldset -->
+
+<table> 
+<tr>
+    <td>Nombre:</td>
+    <td><input type="text"></td>
+
+    <td>Apellidos:</td>
+    <td><input type="text"></td>
+
+    <td>DNI:</td>
+    <td><input type="text"></td>
+</tr>
+
+<tr>
+    <td>Localidad Nacimiento:</td>
+    <td><input type="text"></td>
+
+    <td>Provincia:</td>
+    <td>
+        <select>
+            <option>- selecciona -</option>
+            <option>Madrid</option>
+            <option>Valencia</option>
+            <option>Barcelona</option>
+        </select>
+    </td>
+
+    <td>Fecha Nacimiento:</td>
+    <td><input type="date"></td>
+</tr>
+
+<tr>
+    <td>Dirección:</td>
+    <td colspan="3"><input type="text" style="width:95%;"></td>
+
+    <td>Código Postal:</td>
+    <td><input type="text"></td>
+</tr>
+</table>
+
+</fieldset>
+
+<br>
+
+<!-- FORMA DE ACCESO -->
+<fieldset class="amarillo"> <!-- clase añadida -->
+<legend>Forma de Acceso</legend>
+
+<ul style="list-style:none; padding-left:10px;">
+    <li><input type="radio" name="acceso"> Directo
+        <ul style="list-style:none;">
+            <li><input type="radio" name="modal"> Bachillerato LOGSE. Modalidad <input type="text"></li>
+            <li><input type="radio" name="modal"> Bachillerato Experimental</li>
+            <li><input type="radio" name="modal"> COU. Opción <input type="text"></li>
+            <li><input type="radio" name="modal"> FP2</li>
+            <li><input type="radio" name="modal"> Otros (especifique) <input type="text"></li>
+        </ul>
+    </li>
+
+    <li><input type="radio" name="acceso"> Prueba Libre</li>
+</ul>
+
+</fieldset>
+
+<br>
+
+<!-- DOCUMENTOS -->
+<fieldset class="rojo"> <!-- clase añadida -->
+<legend>Documentos Adjuntados</legend>
+
+<input type="checkbox"> Fotocopia DNI<br>
+<input type="checkbox"> Certificado Académico<br>
+<input type="checkbox"> Otros documentos (especifique)
+<input type="text">
+
+</fieldset>
+
+<br>
+
+<button>Enviar Solicitud</button> <!-- Botón para enviar la información -->
+
+</body>
+</html>
